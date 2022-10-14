@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../styles/reg.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="info-side">
+                <img src="" alt="">
+                <h1>New Here?</h1>
+                <h3>Join the champions and make a difference with Tech!</h3>
+    
+                <div class="alternative">
+                    <h3>Already got an account?</h3>
+                    <a href="./login.html">Login &rArr;</a>                
+                </div>
+            </section>
+    
+            <section class="form-side">
+                <h1>Register</h1>
+                <form action="../pages/register-succes.html" class="reg-form" id="reg-form">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" id="phone" placeholder="Enter your phone number" required>
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="homo">Non-Cis</option>
+                        <option value="others">Others</option>
+                        <option value="not-mention">Prefer not to mention</option>
+                    </select>
+                    <label for="dob">Date Of Birth:</label>
+                    <input type="date" id="dob" required>
+                    <label for="fav-color">Favorite Color:</label>
+                    <input type="color" id="fav-color" required>
+                    <input type="submit" value="Register" class="button">
+                </form>
+            </section>
+    
+        </div>
+    </main>   
+     
+    <script src="../scripts/regLog.js"></script>
+</body>
+</html>
